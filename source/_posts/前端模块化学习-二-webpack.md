@@ -1,5 +1,5 @@
 ---
-title: 前端模块化学习(一)webpack
+title: 前端模块化学习(二)webpack
 date: 2018-05-22 22:01:33
 tags: JavaScript模块化
 ---
