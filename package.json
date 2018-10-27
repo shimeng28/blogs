@@ -5,13 +5,15 @@
   "scripts": {
     "generate": "hexo generate -d",
     "server": "hexo server",
-    "new": "hexo new"
+    "new": "hexo new",
+    "start": "hexo generate --watch",
+    "open": "open /Applications/MacDown.app ~/Documents/blogs/source/_posts/; "
   },
   "hexo": {
-    "version": "3.7.1"
+    "version": "3.8.0"
   },
   "dependencies": {
-    "hexo": "^3.5.0",
+    "hexo": "^3.8.0",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-category": "^0.1.3",
