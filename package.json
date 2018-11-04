@@ -5,7 +5,7 @@
   "scripts": {
     "generate": "hexo generate -d",
     "server": "hexo server",
-    "new": "hexo new",
+    "new": "hexo new; npm run open",
     "start": "hexo generate --watch",
     "open": "open /Applications/MacDown.app ~/Documents/blogs/source/_posts/; "
   },
