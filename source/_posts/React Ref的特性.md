@@ -25,8 +25,7 @@ this.setTextRef = (element) => {
 
 <input ref={this.setTextRef} />
 ```
-这样的话，即可以通过this.textRef取到实例。同时，如果在元素里面使用内联函数，element会先为null,之后才是实例。官方的说明是在更新的时候会调用两次，第一次传
-入为null, 第二次传入的才是实例
+这样的话，即可以通过this.textRef取到实例。同时，如果在元素里面使用内联函数，element会先为null,之后才是实例。官方的说明是在更新的时候会调用两次，第一次传入为null, 第二次传入的才是实例
 
 #### 3. 最后一种方法是通过createRef
 
@@ -68,9 +67,7 @@ export default class RefLearn extends Component {
   }
 }
 ```
-通过上述代码可以看出，我们在constructor中通过createRef创建ref，之后将this.textRef赋值给html元素。
-
-同样我们也可以将ref赋值给class组件，修改一下代码
+通过上述代码可以看出，我们在constructor中通过createRef创建ref，之后将this.textRef赋值给html元素。同样我们也可以将ref赋值给class组件，修改一下代码
 ```jsx
 export default class RefLearn extends Component {
   constructor(props) {
@@ -107,8 +104,7 @@ export default class RefLearn extends Component {
   }
 }
 ```
-这个时候我们通过this.textRef.current拿到的就是TextInput实例，这个时候是没有办法取到dom元素的，因此如果想要实现获取焦点的效果，这个时候就需要TextInput
-组件实现一个方法focusInput以便被调用。因此TextInput我们可以这样实现
+这个时候我们通过this.textRef.current拿到的就是TextInput实例，这个时候是没有办法取到dom元素的，因此如果想要实现获取焦点的效果，这个时候就需要TextInput组件实现一个方法focusInput以便被调用。因此TextInput我们可以这样实现
 ```jsx
 class TextInput extends Component {
   constructor(props) {
@@ -172,7 +168,7 @@ index.js:1437 Warning: Function components cannot be given refs. Attempts to acc
 给一个警告，并且this.funcRef.current为null,也就是ref并未生效。对于函数组件，我们就可以使用Ref转发
 
 
-### 4. Ref转发
+#### 4. Ref转发
 ref转发就是组件将传递给它的ref转发给它的子组件。修改一下Input组件，代码如下
 ```jsx
 const Input = React.forwardRef((props, ref) => (
@@ -181,5 +177,4 @@ const Input = React.forwardRef((props, ref) => (
 ```
 这样就能通过this.funcRef.current访问到input元素了
 
-以上就是React Ref的内容。通过上述也能看出，如果项目已经升级了，大部分情况下我们应该使用React.createRef或者ref回调，需要转发的时候使用React.forwardRef。
-尽量避免使用ref string。因为在React17中可能要被废弃了。
+以上就是React Ref的内容。通过上述也能看出，如果项目已经升级了，大部分情况下我们应该使用React.createRef或者ref回调，需要转发的时候使用React.forwardRef。尽量避免使用ref string。因为在React17中可能要被废弃了。
