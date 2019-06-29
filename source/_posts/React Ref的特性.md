@@ -1,11 +1,9 @@
 ---
 layout: react16
-title: Ref的特性
+title: React Ref的特性
 date: 2019-06-01 14:14:32
 tags: React
 ---
-
-### ref
 
 在react 16中，设置ref有三种方式
 
