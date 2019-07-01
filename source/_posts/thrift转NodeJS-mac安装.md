@@ -69,7 +69,7 @@ bison版本就不是2.3， 在我的机器上是3.1
 ### 安装thrift
 ```shell
 > make   #时间会有点长。如果有错（好像是提示找不到makefile）参考第三步
-> make isntall
+> make install
 ```
 
 ### thrift文件转node文件
