@@ -24,7 +24,8 @@ field: post
 format: html
 limit: 10000
 
-avatar: https://res.cloudinary.com/duoxjcv8x/image/upload/v1532060405/WechatIMG1_qyzfgx.jpg
+# avatar: https://raw.githubusercontent.com/shimeng28/blogs/master/images/avatar.jpeg
+avatar: https://avatars3.githubusercontent.com/u/20619592?s=460&v=4
 # Directory
 source_dir: source
 public_dir: public
