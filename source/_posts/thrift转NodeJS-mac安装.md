@@ -6,7 +6,7 @@ tags: thrift
 
 这次有个需求，后端没有提供http接口，需要前端直接通过node读取thrift接口。于是先配置安装了一下环境，但是其中虽然通过wiki找到了配置方法，但是还是有一些缺漏的地方，包括互联网上其他的答案也是不是特别全面，特意记录保留。
 
-### 安装依赖
+### 一、安装依赖
 
 ```shell
 > brew install boost
@@ -19,7 +19,7 @@ tags: thrift
 > cp /usr/local/Cellar/pkg-config/0.29.2/share/aclocal/pkg.m4 ./aclocal/
 ```
 
-### 下载 thrift安装包
+### 二、下载 thrift安装包
 下载地址：https://thrift.apache.org/download
 我安装的是0.11.0 下载地址：http://note.youdao.com/noteshare?id=da2bb9f2163c5243341ca64dc6a4ee9e
 解压thrift-0.11.0.tar.gz   
@@ -36,7 +36,7 @@ tags: thrift
 
 报错走第三步
 
-### 解决错误
+### 三、解决错误
 ```shell
 > brew unlink bison
 > brew install bison  或 brew reinstall bison
@@ -66,13 +66,13 @@ export LDFLAGS="-L/usr/local/opt/bison/lib"
 
 bison版本就不是2.3， 在我的机器上是3.1
 
-### 安装thrift
+### 四、安装thrift
 ```shell
 > make   #时间会有点长。如果有错（好像是提示找不到makefile）参考第三步
 > make install
 ```
 
-### thrift文件转node文件
+### 五、thrift文件转node文件
 
 ```shell
 如果我们有定义好的 my_file.thrift 文件，那么可以在该文件所在目录下执行：
