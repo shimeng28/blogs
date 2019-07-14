@@ -2,7 +2,7 @@
 layout: react16
 title: React Context的理解
 date: 2019-06-08 20:14:06
-tags: react
+tags: React
 ---
 
 React中父子组件的数据通过单向props传递，组件内部数据通过state维护。对于子组件可以通过回调函数向父组件传递数据，例如事件onChange回调。而像只有孙组件使用祖父组件的数据时，这时可以将孙组件提取出来和数据一起通过祖父组件传递下去。但是对于多个层级各不相同的组件共享一些数据的时候，就需要context来协助了。
