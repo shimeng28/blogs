@@ -1,5 +1,5 @@
 ---
-title: Node.js流（一）Readable Stream
+title: Node-js流(一)Readable-Stream
 date: 2019-07-20 22:06:09
 tags: Node.js
 ---
@@ -139,7 +139,7 @@ if (!state.endEmitted && !state.readableListening) {
   state.flowing = false;
   state.emittedReadable = false;
 
-  if (state.length) { // 初始为0
+  if (state.length) {
     emitReadable(this);
   } else if (!state.reading) { // 初始为false
     process.nextTick(nReadingNextTick, this);
@@ -170,7 +170,7 @@ function readableAddChunk(stream, chunk, encoding, addToFront) {
   const state = stream._readableState;
 
   chunk = Buffer.from(chunk, encoding).toString(state.encoding);
-  if (chunk === null) {
+  if (chunk === null) { // 传入null会写入数据结束
     state.reading = false;
     onEofChunk(stream, state);
   } else {
