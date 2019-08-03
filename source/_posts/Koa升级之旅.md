@@ -31,7 +31,7 @@ Uncaught TypeError: Cannot read property 'call' of undefined
 ```js
 "@ant-design/icons@2.0.0":
   version "2.0.0"
-  resolved "http://r.npm.sankuai.com/@ant-design/icons/download/@ant-design/icons-2.0.0.tgz#f9b8b16e188ec71ed40a24a0037f1a26d8c2be59"
+  resolved "https://registry.npmjs.org/@ant-design/icons/download/@ant-design/icons-2.0.0.tgz#f9b8b16e188ec71ed40a24a0037f1a26d8c2be59"
   integrity sha1-+bixbhiOxx7UCiSgA38aJtjCvlk=
 ```
 
@@ -40,7 +40,7 @@ Uncaught TypeError: Cannot read property 'call' of undefined
 ```js
 "@ant-design/icons@~2.1.1":
   version "2.1.1"
-  resolved "http://r.npm.sankuai.com/@ant-design/icons/download/@ant-design/icons-2.1.1.tgz#7b9c08dffd4f5d41db667d9dbe5e0107d0bd9a4a"
+  resolved "https://registry.npmjs.org/@ant-design/icons/download/@ant-design/icons-2.1.1.tgz#7b9c08dffd4f5d41db667d9dbe5e0107d0bd9a4a"
   integrity sha1-e5wI3/1PXUHbZn2dvl4BB9C9mko=
 ```
 
