@@ -90,7 +90,12 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# deploy:
+#   type: git
+#   repo: git@github.com:shimeng28/shimeng28.github.io.git
+#   branch : master
+
 deploy:
   type: git
-  repo: git@github.com:shimeng28/shimeng28.github.io.git
+  repo: root@139.180.139.38:/data/repository/hexo.git
   branch : master
