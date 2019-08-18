@@ -1,7 +1,7 @@
 ---
-title: debug包使用及源码分析
+title: debug包使用及源码分享
 date: 2018-12-16 15:11:21
-tags: npm包学习
+tags: JavaScript
 ---
 ### 1. 使用介绍
 debug包是一款跨环境的npm包，主要作用如它的名字所示辅助代码debug [GitHub地址](https://github.com/visionmedia/debug)。 在我们的项目中可以通过npm安装

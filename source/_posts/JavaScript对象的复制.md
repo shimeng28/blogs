@@ -1,7 +1,7 @@
 ---
 title: JavaScript对象的复制
 date: 2017-10-30 21:07:17
-tags: javaScript
+tags: JavaScript
 ---
 # JavaScript对象的复制
 

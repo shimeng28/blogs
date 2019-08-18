@@ -1,7 +1,7 @@
 ---
 title: IOS11，点击阴影问题解决方案
 date: 2017-12-05 18:06:07
-tags: javaScript
+tags: JavaScript
 ---
 
 **问题描述：** IOS11下，textarea输入后，点击出现阴影，导致无法点击页面中的其他元素。

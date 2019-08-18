@@ -825,6 +825,11 @@ ee-first@1.1.1:
   resolved "http://r.cnpmjs.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
+ejs@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/ejs/download/ejs-1.0.0.tgz#c9c60a48a46ee452fb32a71c317b95e5aa1fcb3d"
+  integrity sha1-ycYKSKRu5FL7MqccMXuV5aofyz0=
+
 ejs@^2.3.4:
   version "2.6.2"
   resolved "http://r.cnpmjs.org/ejs/download/ejs-2.6.2.tgz#3a32c63d1cd16d11266cd4703b14fec4e74ab4f6"
@@ -1300,6 +1305,14 @@ hexo-generator-category@^0.1.3:
     hexo-pagination "0.0.2"
     object-assign "^2.0.0"
 
+hexo-generator-feed@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npm.taobao.org/hexo-generator-feed/download/hexo-generator-feed-1.2.2.tgz#9516d1596509b157f4d044fb49b2bae398b82ba7"
+  integrity sha1-lRbRWWUJsVf00ET7SbK645i4K6c=
+  dependencies:
+    nunjucks "^3.0.0"
+    object-assign "^4.1.1"
+
 hexo-generator-index@^0.2.0:
   version "0.2.1"
   resolved "http://r.cnpmjs.org/hexo-generator-index/download/hexo-generator-index-0.2.1.tgz#9042229fcac79aaf700575da19332bf3f7ee5c5d"
@@ -1314,6 +1327,15 @@ hexo-generator-search@^2.4.0:
   integrity sha1-9au7u+NSmfUsJVS7iYRdCk+rbJs=
   dependencies:
     nunjucks "^3.0.1"
+    utils-merge "^1.0.0"
+
+hexo-generator-searchdb@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npm.taobao.org/hexo-generator-searchdb/download/hexo-generator-searchdb-1.0.8.tgz#04245256e1413a66313932dbf1c0a7e568559301"
+  integrity sha1-BCRSVuFBOmYxOTLb8cCn5WhVkwE=
+  dependencies:
+    ejs "^1.0.0"
+    striptags latest
     utils-merge "^1.0.0"
 
 hexo-generator-sitemap@^1.2.0:
@@ -2286,7 +2308,7 @@ nunjucks@^2.3.0:
     chokidar "^1.6.0"
     yargs "^3.32.0"
 
-nunjucks@^3.0.1, nunjucks@^3.1.3:
+nunjucks@^3.0.0, nunjucks@^3.0.1, nunjucks@^3.1.3:
   version "3.2.0"
   resolved "http://r.cnpmjs.org/nunjucks/download/nunjucks-3.2.0.tgz#53e95f43c9555e822e8950008a201b1002d49933"
   integrity sha1-U+lfQ8lVXoIuiVAAiiAbEALUmTM=
@@ -2964,6 +2986,11 @@ striptags@^2.1.1:
   version "2.2.1"
   resolved "http://r.cnpmjs.org/striptags/download/striptags-2.2.1.tgz#4c450b708d41b8bf39cf24c49ff234fc6aabfd32"
   integrity sha1-TEULcI1BuL85zyTEn/I0/Gqr/TI=
+
+striptags@latest:
+  version "3.1.1"
+  resolved "https://registry.npm.taobao.org/striptags/download/striptags-3.1.1.tgz#c8c3e7fdd6fb4bb3a32a3b752e5b5e3e38093ebd"
+  integrity sha1-yMPn/db7S7OjKjt1LltePjgJPr0=
 
 stylus@0.54.5, stylus@^0.54.5:
   version "0.54.5"

@@ -1,7 +1,7 @@
 ---
 title: let_var_constv变量声明
 date: 2017-10-28 16:58:47
-tags: javaScript
+tags: JavaScript
 ---
 # 变量声明之var,let,const
 

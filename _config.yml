@@ -27,6 +27,7 @@ path: search.xml
 field: post
 format: html
 limit: 10000
+content: true
 
 # avatar: https://raw.githubusercontent.com/shimeng28/blogs/master/images/avatar.jpeg
 avatar: https://shimeng.info/avatar.jpeg
@@ -84,6 +85,7 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+# plugins: hexo-generate-feed
 ## Themes: https://hexo.io/themes/
 theme: next
 # theme: claudia

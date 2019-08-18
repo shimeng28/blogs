@@ -1,7 +1,7 @@
 ---
 title: 自己写一个mini模块加载器
 date: 2018-01-13 20:14:00
-tags: JavaScript模块化
+tags: 前端工程化
 ---
 requireJS作为一个模块化加载器，前段时间学习了官网，这两天写了个mini版的模块化加载器。[mini-require](https://github.com/shimeng28/Tools/blob/master/mini-requireJS/mini-require.js)
 
