@@ -29,7 +29,7 @@ format: html
 limit: 10000
 
 # avatar: https://raw.githubusercontent.com/shimeng28/blogs/master/images/avatar.jpeg
-avatar: https://avatars3.githubusercontent.com/u/20619592?s=460&v=4
+avatar: https://shimeng.info/avatar.jpeg
 # Directory
 source_dir: source
 public_dir: public
