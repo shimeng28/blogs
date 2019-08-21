@@ -1,7 +1,7 @@
 ---
 title: 唤醒App的过程
 date: 2017-12-05 18:13:49
-tags: Javascript
+tags: JavaScript
 ---
  
 #### 当通过一条链接，打开App或者下载App，我们称这个过程为唤醒App的过程
