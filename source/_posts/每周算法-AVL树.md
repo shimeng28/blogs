@@ -375,6 +375,16 @@ getBalanceFactory(node) {
 此时 根节点平衡因子为2，  根节点的子节点的平衡因子 > 0
 
 ```js
+rightRotate(node) {
+  const child = node.left;
+  const child_right = child.right;
+
+  child.right = node;
+  node.left = child_right;
+
+  return child;
+}
+
 // RR 右旋
 if (balanceFactory > 1 && this.getBalanceFactory(node.left) > 0) {
   return this.rightRotate(node);
@@ -388,6 +398,16 @@ if (balanceFactory > 1 && this.getBalanceFactory(node.left) > 0) {
 此时根节点平衡因子为-2，  根节点的子节点的平衡因子 < 0
 
 ```js
+leftRotate(node) {
+  const child = node.right;
+  const child_left = child.left;
+
+  child.left = node;
+  node.right = child_left;
+
+  return child;
+}
+
 // LR 左旋
 if (balanceFactory < -1 && this.getBalanceFactory(node.right) < 0) {
   return this.leftRotate(node);
