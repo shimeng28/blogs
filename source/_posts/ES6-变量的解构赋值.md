@@ -1,7 +1,7 @@
 ---
 title: ES6-变量的解构赋值
 date: 2018-11-04 13:32:58
-tags:
+tags: JavaScript
 ---
 一、 变量的解构赋值
 

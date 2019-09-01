@@ -1,7 +1,7 @@
 ---
 title: thrift转NodeJS mac安装
 date: 2019-07-01 22:21:37
-tags: thrift
+tags: NodeJs
 ---
 
 这次有个需求，后端没有提供http接口，需要前端直接通过node读取thrift接口。于是先配置安装了一下环境，但是其中虽然通过wiki找到了配置方法，但是还是有一些缺漏的地方，包括互联网上其他的答案也是不是特别全面，特意记录保留。
