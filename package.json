@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "generate": "hexo generate -d",
+    "g": "hexo generate -d",
     "server": "hexo server",
     "new": "hexo new",
     "start": "hexo generate --watch",
