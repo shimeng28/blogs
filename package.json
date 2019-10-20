@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "g": "hexo generate -d",
+    "d": "hexo generate -d",
+    "clean": "hexo clean",
+    "build": "npm-run-all -p clean dev",
     "server": "hexo server",
     "new": "hexo new",
     "start": "hexo generate --watch",

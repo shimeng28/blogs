@@ -29,8 +29,8 @@ format: html
 limit: 10000
 content: true
 
-# avatar: https://raw.githubusercontent.com/shimeng28/blogs/master/images/avatar.jpeg
 avatar: https://shimeng.info/avatar.jpeg
+# avatar: https://shimeng.info/avatar.jpeg
 # Directory
 source_dir: source
 public_dir: public
@@ -99,5 +99,5 @@ theme: next
 
 deploy:
   type: git
-  repo: root@139.180.139.38:/data/repository/hexo.git
+  repo: git@106.54.90.64:/home/git/blog.git
   branch : master

@@ -46,7 +46,9 @@ https://api.github.com/repos/shimeng28/blogs/issues
 
 ### 接口跪了
 
-到这的时候按道理就是可以了。可是当你hexo d -g部署之后，点击登入会发现有个弹窗报错 [object ProgressEvent]。如果我们查看网络请求面板就会发现是https://gh-oauth.imsun.net这个接口挂了。 具体原因直接访问这个地址就能看出来了是https证书过期了。由于这个服务的提供者不维护了，那就只能靠我们自己了。不过这个接口的提供者开源了他的服务代码[https://github.com/imsun/gh-oauth-server](https://github.com/imsun/gh-oauth-server)。 这个服务的内容就是向 https://github.com/login/oauth/access_token 转发数据。解决方案看个人吧，如果自己有一台服务器可以把这个服务部署上去替换一下就好了。不过网友的力量是巨大的，已经有其他人部署了，我们就先用这吧。
+到这的时候按道理就是可以了。可是当你hexo d -g部署之后，点击登入会发现有个弹窗报错 [object ProgressEvent]。如果我们查看网络请求面板就会发现是https://gh-oauth.imsun.net这个接口挂了。 具体原因直接访问这个地址就能看出来了是https证书过期了。由于这个服务的提供者不维护了，那就只能靠我们自己了。不过这个接口的提供者开源了他的服务代码[https://github.com/imsun/gh-oauth-server](https://github.com/imsun/gh-oauth-server)。 这个服务的内容就是向 https://github.com/login/oauth/access_token 转发数据。解决方案看个人吧，如果自己有一台服务器可以把这个服务部署上去替换一下就好了。因此自己就部署了一下，访问接口是https://shimeng.info/api/oauth;
+
+同样发现https://imsun.github.io/gitment/dist/gitment.browser.js不可用，都部署到自己到服务器上
 
 具体的解决方法就是在 themes/next/layout/\_third-party/comments/gitment.swig 文件内部 将
 
@@ -57,7 +59,7 @@ https://api.github.com/repos/shimeng28/blogs/issues
 替换为
 
 ```js
-https://www.wenjunjiang.win/js/gitment.js
+https://shimeng.info/static/gitment.browser.js
 ```
 就可以了。这个时候我们再通过 hexo clean; hexo d -g; 清楚缓存再重新部署发现就能登陆了。
 

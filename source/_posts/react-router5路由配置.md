@@ -3,7 +3,10 @@ title: react-router5路由配置
 date: 2019-09-26 21:30:17
 tags: React
 ---
-最近在做商家中心的移动端搭建，当前主要负责的就是webpack编译，路由，以及移动端适配和echarts的引入。本文主要作为引入react路由的方法。在React中，路由需要我们自己去添加，相应的模块为react-router。react-router已经升级到5，一切皆是组件的思想更加的明显，并且其针对react native和i版作了区分。对于本次来说，我们只需要引入react-router-dom即可，相应的安装就是 ```yarn add react-router-dom ```。
+最近在做商家中心的移动端搭建，当前主要负责的就是webpack编译，路由，以及移动端适配和echarts的引入。本文主要作为引入react路由的方法。在React中，路由需要我们自己去添加，相应的模块为react-router。react-router已经升级到5，其主要思想就是一切皆是组件，并且其针对react native和i版作了区分。对于本次来说，我们只需要引入react-router-dom即可，相应的安装就是 
+```js 
+  yarn add react-router-dom
+```
 
 根据[react-router官方文档](https://reacttraining.com/react-router/web/guides/quick-start)的指引，最终的路由模块应该是这样：
 
@@ -85,6 +88,10 @@ const wrapRoutesList = wrapRoute(routesList);
   { 
     path: "/errors/403"
     component: Component403,
+  },
+  { 
+    path: "/errors"
+    component: ErrorIndex,
   },
   { 
     path: "/"
