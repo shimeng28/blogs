@@ -3,12 +3,12 @@
 <!-- LOCAL: You can save these files to your site and update links -->
     {% if theme.gitment.mint %}
         {% set CommentsClass = "Gitmint" %}
-        <link rel="stylesheet" href="https://shimeng.info/static/gitment.css">
-        <script src="https://shimeng.info/static/gitment.browser.js"></script>
+        <link rel="stylesheet" href="/static/gitment.css">
+        <script src="/static/gitment.browser.js"></script>
     {% else %}
         {% set CommentsClass = "Gitment" %}
-        <link rel="stylesheet" href="https://shimeng.info/static/gitment.css">
-        <script src="https://shimeng.info/static/gitment.browser.js"></script>
+        <link rel="stylesheet" href="/static/gitment.css">
+        <script src="/static/gitment.browser.js"></script>
     {% endif %}
 <!-- END LOCAL -->
 

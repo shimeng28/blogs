@@ -29,8 +29,8 @@ format: html
 limit: 10000
 content: true
 
-avatar: https://shimeng.info/avatar.jpeg
-# avatar: https://shimeng.info/avatar.jpeg
+avatar: /avatar.jpeg
+# avatar: /avatar.jpeg
 # Directory
 source_dir: source
 public_dir: public
