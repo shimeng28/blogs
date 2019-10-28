@@ -3,9 +3,12 @@ title: React Router5源码解读
 date: 2019-10-05 20:04:36
 tags: React
 ---
+### 概论
 路由在前端中我们可以理解为是将URL和视图的一种映射关系，URL的更新引起页面的更新。在web2.0之前，没有ajax，页面每次都需要全量刷新。有了ajax，有了浏览器提供的api，我们从而有了SPA(单页应用)。
 
 react-router4开始将其分为react-router, react-router-dom, react-router-native。react-router是核心的代码，react-router-dom, react-router-native分别是针对浏览器环境和移动端IOS，android作的适配。本次的源码阅读的版本是v5.0.1，主要是react-router。
+
+![React-Router5源码解读](React-Router5源码解读/1.png)
 
 React-Router的各个模块都是一个React组件，主要看Router、Route、Switch、Link、Redirect。
 
