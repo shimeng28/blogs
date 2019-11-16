@@ -88,5 +88,5 @@ or
 
 如果是options的notMerge不为true的情况下，在增加一个维度的数据的时候并不能正常的更新，所以在这里直接就设置为true了。
 
-以上就是针对echarts在react之上的封装，还是相对比较简单的。
+以上就是针对echarts在react之上的封装。
     
