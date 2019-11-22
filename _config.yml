@@ -99,5 +99,5 @@ theme: next
 
 deploy:
   type: git
-  repo: git@106.54.90.64:/home/git/blog.git
+  repo: root@129.226.144.208:/root/blog.git
   branch : master
