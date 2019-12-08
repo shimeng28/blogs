@@ -91,7 +91,11 @@ module.exports = {
   entry: {
     react: [
       'react',
-      'react-dom',
+      'react-dom'
+    ],
+    router: [
+      'react-router',
+      'react-router-dom'
     ]
   }
   output: {
