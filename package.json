@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "d": "hexo generate -d",
+    "deploy": "hexo generate -d",
     "clean": "hexo clean",
     "build": "npm-run-all -p clean dev",
     "server": "hexo server",
